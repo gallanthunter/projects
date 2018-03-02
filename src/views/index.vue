@@ -46,7 +46,9 @@
           <div style="height: 400px">Content</div>
         </Card>
       </Content>
-      <Footer :style="{background: '#fff', boxShadow: '0 2px 3px 2px rgba(0,0,0,.1)'}"></Footer>
+      <Footer :style="{background: '#fff', boxShadow: '0 2px 3px 2px rgba(0,0,0,.1)'}">
+        copyright
+      </Footer>
     </Layout>
   </div>
 </template>
