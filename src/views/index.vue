@@ -2,28 +2,32 @@
   <div class="layout">
     <Sider :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
       <Menu active-name="0" theme="dark" width="auto" :open-names="['1']">
-        <MenuItem name="0">仪表盘</MenuItem>
+        <MenuItem name="0">
+          <Icon type="stats-bars"></Icon>
+          仪表盘
+        </MenuItem>
         <Submenu name="1">
           <template slot="title">
             <Icon type="ios-navigate"></Icon>
-            Item 1
+            项目信息
           </template>
-          <MenuItem name="1-1">Option 1</MenuItem>
-          <MenuItem name="1-2">Option 2</MenuItem>
-          <MenuItem name="1-3">Option 3</MenuItem>
+          <MenuItem name="1-1">公用事业</MenuItem>
+          <MenuItem name="1-2">智慧城市</MenuItem>
+          <MenuItem name="1-3">车联网</MenuItem>
+          <MenuItem name="1-4">智慧家庭</MenuItem>
         </Submenu>
         <Submenu name="2">
           <template slot="title">
             <Icon type="ios-keypad"></Icon>
-            Item 2
+            项目管理
           </template>
-          <MenuItem name="2-1">Option 1</MenuItem>
-          <MenuItem name="2-2">Option 2</MenuItem>
+          <MenuItem name="2-1">新增项目</MenuItem>
+          <MenuItem name="2-2">修改项目</MenuItem>
         </Submenu>
         <Submenu name="3">
           <template slot="title">
             <Icon type="ios-analytics"></Icon>
-            Item 3
+            系统设置
           </template>
           <MenuItem name="3-1">Option 1</MenuItem>
           <MenuItem name="3-2">Option 2</MenuItem>
@@ -39,7 +43,7 @@
           <BreadcrumbItem>Layout</BreadcrumbItem>
         </Breadcrumb>
         <Card>
-          <div style="height: 600px">Content</div>
+          <div style="height: 400px">Content</div>
         </Card>
       </Content>
       <Footer :style="{background: '#fff', boxShadow: '0 2px 3px 2px rgba(0,0,0,.1)'}"></Footer>
