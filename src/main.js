@@ -8,13 +8,14 @@ import Routers from './router/routes'
 import 'iview/dist/styles/iview.css'
 // import locale  from 'iview/dist/locale/zh-CN'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 Vue.use(VueRouter)
 Vue.use(iView)
 
 // The routing configuration
 const RouterConfig = {
+  mode: 'history',
   routes: Routers
 }
 const router = new VueRouter(RouterConfig)
