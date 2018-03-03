@@ -11,5 +11,5 @@ export default [
   {
     path: '/content',
     component: content
-  },
+  }
 ]
