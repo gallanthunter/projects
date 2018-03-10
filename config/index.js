@@ -10,7 +10,14 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    // 端口代理，实现对api的跨域访问，express开启的server在3000端口，前端在8080端口
+    // 因此访问8080端口的资源会被定向至3000端口
+    proxyTable: {
+      '/api/v1': {
+        target: "http://localhost:3000",
+        changeOrigin: true
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
